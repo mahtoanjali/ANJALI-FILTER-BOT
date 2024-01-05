@@ -11,7 +11,7 @@ import requests
 import os
 
 
-API = "https://apis.xditya.me/lyrics?song="
+API = "https://apis.QUEENx_GOD.me/lyrics?song="
 
 @Client.on_message(filters.text & filters.command(["lyrics"]))
 async def sng(bot, message):
@@ -25,9 +25,9 @@ async def sng(bot, message):
           await mee.delete()
           try:
             await mee.delete()
-            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs ", url = f"t.me/vj_bots")]]))
+            await bot.send_message(chat_id, text = rpl, reply_to_message_id = message.id, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs ", url = f"t.me/QUEENx_GOD")]]))
           except Exception as e:                            
-             await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/vj_bots")]]))
+             await message.reply_text(f"I Can't Find A Song With `{song}`", quote = True, reply_markup = InlineKeyboardMarkup([[InlineKeyboardButton("ᴜᴘᴅᴀᴛᴇs", url = f"t.me/QUEENx_GOD")]]))
 
 
 def search(song):
@@ -39,7 +39,7 @@ def lyrics(song):
         fin = search(song)
         text = f'**🎶 Sᴜᴄᴄᴇꜱꜰᴜʟʟy Exᴛʀᴀᴄᴛᴇᴅ Lyɪʀɪᴄꜱ Oꜰ {song}**\n\n'
         text += f'`{fin["lyrics"]}`'
-        text += '\n\n\n**Made By Artificial Intelligence**'
+        text += '\n\n\n**Made By Mahto Anjali**'
         return text
 
 
